@@ -28,8 +28,7 @@ function Aiming.Check()
 
     local Character = Aiming.Character(Aiming.Selected)
     local KOd = Character:WaitForChild("BodyEffects")["K.O"].Value
-    local Grabbed = Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
-
+    local Grabbed = Character:F
     if (KOd or Grabbed) then
         return false
     end
@@ -93,3 +92,4 @@ setclipboard("https://www.roblox.com/groups/4388652/hashtags-squad#!/about")
 wait(1)
 game.Players.LocalPlayer:Kick("Join the group to use the script, the link was copied to your clipboard!")
         end
+        print("hi")
